@@ -81,22 +81,21 @@ $(document).ready(function() {
     $addFilmBtn.click(function(e) {
         e.preventDefault();
         if ($FilmTitle.val() && $FilmGenre.val()) {
-            let $newFilm = $(`
+            $FilmsList.append(`
                 <div class="Film tr" value="${$FilmGenre.val()}">
-                            <div class="text-center">
-                                    <div class="d-flex align-items-center">
-                                        <span class="Film-title">${$FilmTitle.val()}<span>
-                                    </div>
+                    <div class="text-center">
+                            <div class="d-flex align-items-center">
+                                <span class="Film-title">${$FilmTitle.val()}<span>
                             </div>
-                            <div class="text-center">
-                                <div class="genre">${$FilmGenre.val()}</div>
-                            </div>  
-                            <div class="text-center">
-                                <div><button class="btn btn-danger delete_Film_btn">Delete</button></div>
-                            </div>
-                        </div>
-                    `)
-            $FilmsList.append($newFilm);
+                    </div>
+                    <div class="text-center">
+                        <div class="genre">${$FilmGenre.val()}</div>
+                    </div>  
+                    <div class="text-center">
+                        <div><button class="btn btn-danger delete_Film_btn">Delete</button></div>
+                    </div>
+                </div>
+            `)
         }
     })
 
