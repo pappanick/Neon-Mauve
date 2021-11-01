@@ -41,18 +41,17 @@ function updateDOM(data) {
     for (let j = 0; j < data.length; j++) {
         $FilmsList.append(`
             <div class="Film tr" value="${data[j]["genre"]}">
-            <div class="text-center">
-                    <div class="d-flex align-items-center">
-                        <span class="Film-title">${data[j]["title"]}<span>
+                        <div class="td" col-6 >
+                            <span class="Film-title">${data[j]["title"]}<span>
+                        </div>
+                        <div class="td" col-4 align="center">
+                        <span class="genre">${data[j]["genre"]}<span>
+                    </div>  
+                    <div class="td" col-1 align="right">
+                        <span><button class="btn btn-danger delete_Film_btn">Delete</button><span>
                     </div>
+                    <span>---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<span>
             </div>
-            <div class="text-center">
-                <div class="genre display-4">${data[j]["genre"]}</div>
-            </div>  
-            <div class="text-center">
-                <div><button class="btn btn-danger delete_Film_btn">Delete</button></div>
-            </div>
-        </div>
             `)
 
     }
@@ -83,16 +82,14 @@ $(document).ready(function() {
         if ($FilmTitle.val() && $FilmGenre.val()) {
             $FilmsList.append(`
                 <div class="Film tr" value="${$FilmGenre.val()}">
-                    <div class="text-center">
-                            <div class="d-flex align-items-center">
-                                <span class="Film-title">${$FilmTitle.val()}<span>
-                            </div>
+                    <div class="td" align="left">
+                        <span class="Film-title">${$FilmTitle.val()}<span>
                     </div>
-                    <div class="text-center">
+                    <div class="td" align="center">
                         <div class="genre">${$FilmGenre.val()}</div>
                     </div>  
-                    <div class="text-center">
-                        <div><button class="btn btn-danger delete_Film_btn">Delete</button></div>
+                    <div class="td" align="right">
+                        <td><button class="btn btn-danger delete_Film_btn">Delete</button></td>
                     </div>
                 </div>
             `)
