@@ -35,12 +35,11 @@
         .navbar-dark .navbar-brand {
             color: red;
         }
-
-        #footer{
+        
+        #footer {
             background-color: #403d3d;
             margin-top: 200px;
         }
-
     </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -65,19 +64,19 @@
 </head>
 
 <body>
- <div class="MainPage"> 
-    <div class="container mt-5 d-flex justify-content-center">
-        <form role="form" data-toggle="validator">
-            <div class="row">
-                <div class="col-5">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="Film_title" placeholder="Film title" required>
+    <div class="MainPage">
+        <div class="container mt-5 d-flex justify-content-center">
+            <form role="form" data-toggle="validator">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="Film_title" placeholder="Film title" required>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-4">
-                    <div class="form-group">
-                        <select type="genre" class="form-select" id="Film_Genre" required>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <select type="genre" class="form-select" id="Film_Genre" required>
 
                     <!--This is monumentaly stupid but it is late, i cannot think and I have to study for a midterm-->
                     <!--I leave a list on app.js in case I have time on Monday or if you can implement it-->
@@ -120,70 +119,70 @@
                 <!--This was very stupid-->
 
                         </select>
-                    </div>    
-                </div>
+                        </div>
+                    </div>
 
-                <div class="col">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary" id="add-Film-btn">Add Film</button>
-                    </div>   
-                </div> 
-            </div>
-            <!--1<div class="col-10">
+                    <div class="col">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary" id="add-Film-btn">Add Film</button>
+                        </div>
+                    </div>
+                </div>
+                <!--1<div class="col-10">
                 <div class="icon">
                      <img src="images/curtain.png"> 
                 </div> 
             </div>-->
-        </form>
-            
-    </div> 
+            </form>
 
-    <div class="container mt-5">  
-        <div class="row">
-            <div class="col-12 mt-6">
-                <div class="statement text-center">
-                    Make a list of Films you intend to watch. A watch-list. Add title and Genre.
-                </div>
-                <div class="table mt-3">
-                    <div class="table-dark">
-                        <div class="row">
-                            <div class="col-5 th">Title</div>
-                            <div class="col-3 th">Genre <i class="fa fa-fw fa-sort descending" style="cursor: pointer;"></i></div>
-                            <div class="col-4 th">Delete</div>
-                        </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12 mt-6">
+                    <div class="statement text-center">
+                        Make a list of Films you intend to watch. A watch-list. Add title and Genre.
                     </div>
-                    <div id="Films_list">
+                    <div class="table mt-3">
+                        <div class="table-dark">
+                            <div class="row">
+                                <div class="col-5 th">Title</div>
+                                <div class="col-3 th">Genre <i class="fa fa-fw fa-sort descending" style="cursor: pointer;"></i></div>
+                                <div class="col-4 th">Delete</div>
+                            </div>
+                        </div>
+                        <div id="Films_list">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div> 
 
-<footer id="footer" class="page-footer font-small special-color-dark pt-4">
-    <div class="container">
-      <ul class="list-unstyled list-inline text-center">
-        <li class="list-inline-item">
-          <a class="btn-floating btn-fb mx-1" href="#">
-            <i class="fab fa-facebook-f" > </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-tw mx-1" href="#">
-            <i class="fab fa-twitter"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-            <a class="btn-floating btn-tw mx-1" href="#">
-              <i class="fab fa-instagram"> </i>
-            </a>
-          </li>
-      </ul>
-    </div>
-    <div class="footer-copyright text-center py-3" style="color: rgba(255,255,255,0.6);background-color: rgba(0,0,0,0.2)">© 2021 Copyright: GNU v2.0 <img src="images/logo.png" alt="" width="25" height="35"></div>
-  </footer>
-  
-<script src="app.js"></script>
+    <footer id="footer" class="page-footer font-small special-color-dark pt-4">
+        <div class="container">
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/michaelc.newell.7/">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/NickPappas90">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="https://www.instagram.com/hephaestus.escaped.automaton/">
+                        <i class="fab fa-instagram"> </i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-copyright text-center py-3" style="color: rgba(255,255,255,0.6);background-color: rgba(0,0,0,0.2)">© 2021 Copyright: GNU v2.0 <img src="images/logo.png" alt="" width="25" height="35"></div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
 
 </html>

@@ -10,9 +10,9 @@
     <!-- table pagination function -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- css sortable function -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- table pagination function -->
-    
+
     <style>
         h1 {
             text-align: center;
@@ -35,16 +35,17 @@
         .navbar-dark .navbar-brand {
             color: red;
         }
-
-        #footer{
+        
+        #footer {
             background-color: #403d3d;
             margin-top: 100px;
         }
-
-        .container{
+        
+        .container {
             margin-top: 15%;
         }
-        .img-text{
+        
+        .img-text {
             width: 100%;
             height: 300px;
             display: block;
@@ -54,19 +55,23 @@
             color: #fff;
             border-radius: 15px;
         }
-        .img-text h2{
+        
+        .img-text h2 {
             font-size: 25px;
-            text-transform:  uppercase;
+            text-transform: uppercase;
             letter-spacing: 2px;
         }
-        .img-text p{
+        
+        .img-text p {
             font-size: 13px;
         }
-        .single-box{
-            position:relative;
+        
+        .single-box {
+            position: relative;
             margin-bottom: 40px;
         }
-        .img-area{
+        
+        .img-area {
             position: absolute;
             width: 100px;
             height: 100px;
@@ -74,27 +79,29 @@
             overflow: hidden;
             top: 15px;
             left: 125px;
-            border-radius:50%;
+            border-radius: 50%;
         }
-        .img-area img{
+        
+        .img-area img {
             width: 100%;
         }
-        .carousel-indicators{
+        
+        .carousel-indicators {
             left: 0;
             top: auto;
             bottom: -70px;
         }
+        
         .carousel-indicators li {
             background: #000;
             border-radius: 50%;
             width: 15px;
             height: 15px;
         }
-        .carousel-indicators .active{
+        
+        .carousel-indicators .active {
             background: #fff;
-            
         }
-
     </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -119,7 +126,7 @@
 </head>
 
 <body>
-    
+
 
 
     <div class="container mt-4">
@@ -127,8 +134,8 @@
             <h1>About</h1>
             <p id="prime" class="normaltext">This is a place where you can make a list of films you intend to see along with the genre of the film. After watching a film you can remove it from the watchlist. </p>
         </div>
-    </div>    
-          
+    </div>
+
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-12">
@@ -136,7 +143,7 @@
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    </ol>   
+                    </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row justify-content-center">
@@ -146,9 +153,9 @@
                                             <img src="images/pappas.avatar.jpg" alt="">
                                         </div>
                                         <div class="img-text">
-                                            <h2>Niko pappas</h2>
-                                            <p>Nikolaos Pappas is currently pursuing a Software Development major in Information Technology in the American College of Greece.
-                                                He is interested in Machine Learning, Python and Linux but is also always eager to learn new things.
+                                            <h2>Nick Pappas</h2>
+                                            <p>Nikolaos Pappas is currently pursuing a Software Development major in Information Technology in the American College of Greece. He is interested in Machine Learning, Python and Linux but is also always eager
+                                                to learn new things.
                                             </p>
                                         </div>
                                     </div>
@@ -162,8 +169,7 @@
                                         <div class="img-area"><img src="images/newellMichael.jpg" alt=""></div>
                                         <div class="img-text">
                                             <h2>Michael Newell</h2>
-                                            <p>Michael Newell is a senior studying Information Technology with a emphasis in Software Development
-                                                at the American College of Greece. He is interested to study a master's in Cyber Security.
+                                            <p>Michael Newell is a senior studying Information Technology with a emphasis in Software Development at the American College of Greece. He is interested to study a master's in Cyber Security.
                                             </p>
                                         </div>
                                     </div>
@@ -173,38 +179,38 @@
                     </div>
                 </div>
             </div>
-        </div>  
-    </div>    
+        </div>
+    </div>
 
 
     <footer id="footer" class="page-footer font-small special-color-dark pt-4">
-        <div class="container mt-3">    
-          <ul class="list-unstyled list-inline text-center">
-            <li class="list-inline-item">
-              <a class="btn-floating btn-fb mx-1" href="#">
-                <i class="fab fa-facebook-f" > </i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn-floating btn-tw mx-1" href="#">
-                <i class="fab fa-twitter"> </i>
-              </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="btn-floating btn-tw mx-1" href="#">
-                  <i class="fab fa-instagram"> </i>
-                </a>
-              </li>
-          </ul>
+        <div class="container mt-3">
+            <ul class="list-unstyled list-inline text-center">
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/michaelc.newell.7/">
+                        <i class="fab fa-facebook-f"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="https://twitter.com/NickPappas90">
+                        <i class="fab fa-twitter"> </i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="btn-floating btn-tw mx-1" href="https://www.instagram.com/hephaestus.escaped.automaton/">
+                        <i class="fab fa-instagram"> </i>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="footer-copyright text-center py-3" style="color: rgba(255,255,255,0.6);background-color: rgba(0,0,0,0.2)">  © 2021 Copyright: GNU v2.0 <img src="images/logo.png" alt="" width="25" height="35"> </div>
-      </footer>
-      
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <div class="footer-copyright text-center py-3" style="color: rgba(255,255,255,0.6);background-color: rgba(0,0,0,0.2)"> © 2021 Copyright: GNU v2.0 <img src="images/logo.png" alt="" width="25" height="35"> </div>
+    </footer>
 
-    </body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
 
 </html>
