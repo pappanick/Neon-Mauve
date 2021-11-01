@@ -24,6 +24,8 @@
     <style>
         body {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: linear-gradient(-100deg, darkgrey 50%, grey 50%);
+            height: 70vh;
         }
         
         .navbar-dark .navbar-brand {
@@ -32,6 +34,11 @@
         
         .navbar-dark .navbar-brand {
             color: red;
+        }
+
+        #footer{
+            background-color: #403d3d;
+            margin-top: 200px;
         }
     </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -54,92 +61,94 @@
             </div>
         </div>
     </nav>
-
-    <!-- <div class="background image">
-            <img src="images/curtain.png" width="1440" height="600" class="background" alt="cinema">
-        </div> -->
 </head>
 
 <body>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-12">
-                <div class="icon">
-                    <!-- <img src="images/curtain.png"> -->
-                </div>
-            </div>
-            <div class="col-12">
-                <form role="form" data-toggle="validator">
+ <div class="MainPage"> 
+    <div class="container mt-5 d-flex justify-content-center">
+        <form role="form" data-toggle="validator">
+            <div class="row">
+                <div class="col-5">
                     <div class="form-group">
-                        <div class="row mt-3">
-                            <div class="">
-                                <input type="text" class="form-control" id="Film_title" placeholder="Film title" required>
-                            </div>
-                            <div class="">
-                                <select type="genre" class="form-select" id="Film_Genre" required>
+                        <input type="text" class="form-control" id="Film_title" placeholder="Film title" required>
+                    </div>
+                </div>
 
-                            <!--This is monumentaly stupid but it is late, i cannot think and I have to study for a midterm-->
-                            <!--I leave a list on app.js in case I have time on Monday or if you can implement it-->
-                            <!-- <option value="genre[j]">genre[j]</option> -->
-                            <option value="Action">Action</option>
-                            <option value="Adventure">Adventure</option>
-                            <option value="Animation">Animation</option>
-                            <option value="Arthouse">Arthouse</option>
-                            <option value="Asian">Asian</option>
-                            <option value="Camp">Camp</option>
-                            <option value="Classics">Classics</option>
-                            <option value="Comedy">Comedy</option>
-                            <option value="Crime">Crime</option>
-                            <option value="Cult">Cult</option>
-                            <option value="Documentary">Documentary</option>
-                            <option value="Drama">Drama</option>
-                            <option value="Epic">Epic</option>
-                            <option value="Erotica">Erotica</option>
-                            <option value="Experimental">Experimental</option>
-                            <option value="Exploitation">Exploitation</option>
-                            <option value="Fantasy">Fantasy</option>
-                            <option value="Film Noir">Film Noir</option>
-                            <option value="Giallo">Giallo</option>
-                            <option value="Horror">Horror</option>
-                            <option value="Martial Arts">Martial Arts</option>
-                            <option value="Musical">Musical</option>
-                            <option value="Mystery">Mystery</option>
-                            <option value="Performance">Performance</option>
-                            <option value="Philosophy">Philosophy</option>
-                            <option value="Politics">Politics</option>
-                            <option value="Romance">Romance</option>
-                            <option value="Sci-Fi">Sci-Fi</option>
-                            <option value="Short">Short</option>
-                            <option value="Silent">Silent</option>
-                            <option value="Thriller">Thriller</option>
-                            <option value="TV">TV</option>
-                            <option value="Video Art">Video Art</option>
-                            <option value="War">War</option>
-                            <option value="Western">Western</option>
-                        <!--This was very stupid-->
+                <div class="col-4">
+                    <div class="form-group">
+                        <select type="genre" class="form-select" id="Film_Genre" required>
+
+                    <!--This is monumentaly stupid but it is late, i cannot think and I have to study for a midterm-->
+                    <!--I leave a list on app.js in case I have time on Monday or if you can implement it-->
+                    <!-- <option value="genre[j]">genre[j]</option> -->
+                    <option value="Action">Action</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Arthouse">Arthouse</option>
+                    <option value="Asian">Asian</option>
+                    <option value="Camp">Camp</option>
+                    <option value="Classics">Classics</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Crime">Crime</option>
+                    <option value="Cult">Cult</option>
+                    <option value="Documentary">Documentary</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Epic">Epic</option>
+                    <option value="Erotica">Erotica</option>
+                    <option value="Experimental">Experimental</option>
+                    <option value="Exploitation">Exploitation</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Film Noir">Film Noir</option>
+                    <option value="Giallo">Giallo</option>
+                    <option value="Horror">Horror</option>
+                    <option value="Martial Arts">Martial Arts</option>
+                    <option value="Musical">Musical</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Performance">Performance</option>
+                    <option value="Philosophy">Philosophy</option>
+                    <option value="Politics">Politics</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Short">Short</option>
+                    <option value="Silent">Silent</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="TV">TV</option>
+                    <option value="Video Art">Video Art</option>
+                    <option value="War">War</option>
+                    <option value="Western">Western</option>
+                <!--This was very stupid-->
 
                         </select>
-                            </div>
+                    </div>    
+                </div>
 
-                            <div class="">
-                                <button type="submit" class="btn btn-primary" id="add-Film-btn">Add Film</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+                <div class="col">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary" id="add-Film-btn">Add Film</button>
+                    </div>   
+                </div> 
             </div>
-        </div>
+            <!--1<div class="col-10">
+                <div class="icon">
+                     <img src="images/curtain.png"> 
+                </div> 
+            </div>-->
+        </form>
+            
+    </div> 
+
+    <div class="container mt-5">  
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mt-6">
                 <div class="statement text-center">
-                    Make a list of Films you intend to watch. A watchlist. Add title and Genre.
+                    Make a list of Films you intend to watch. A watch-list. Add title and Genre.
                 </div>
                 <div class="table mt-3">
                     <div class="table-dark">
                         <div class="row">
                             <div class="col-5 th">Title</div>
                             <div class="col-3 th">Genre <i class="fa fa-fw fa-sort descending" style="cursor: pointer;"></i></div>
-                            <div class="col-1 th">Delete</div>
+                            <div class="col-4 th">Delete</div>
                         </div>
                     </div>
                     <div id="Films_list">
@@ -148,6 +157,35 @@
             </div>
         </div>
     </div>
+</div> 
+
+<footer id="footer" class="page-footer font-small special-color-dark pt-4">
+    <div class="container">
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a class="btn-floating btn-fb mx-1" href="#">
+            <i class="fab fa-facebook-f" > </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1" href="#">
+            <i class="fab fa-twitter"> </i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+            <a class="btn-floating btn-tw mx-1" href="#">
+              <i class="fab fa-instagram"> </i>
+            </a>
+          </li>
+      </ul>
+    </div>
+    <div class="footer-copyright text-center py-3" style="color: rgba(255,255,255,0.6);background-color: rgba(0,0,0,0.2)">© 2021 Copyright:
+      <a style = "color: #fff;text-decoration: none"href="index.html"> Watch-List.com</a>
+    </div>
+    
+  </footer>
+  
+  
     <script src="app.js"></script>
 </body>
 
